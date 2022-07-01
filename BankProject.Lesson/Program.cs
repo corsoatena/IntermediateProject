@@ -7,9 +7,13 @@ namespace IntermediateProject.Lesson
         static void Main(string[] args)
         {
             Person bruno = new Person();    
-            BankAccount bankAccount = new BankAccount(bruno);
-           
-        }   
+            BankAccount bankAccount1 = new BankAccount(bruno);
+            Console.WriteLine(BankAccount.AccontNumbers);
+            BankAccount bankAccount2 = new BankAccount(bruno);
+            Console.WriteLine(BankAccount.AccontNumbers);
+
+
+        }
     }  
     
 

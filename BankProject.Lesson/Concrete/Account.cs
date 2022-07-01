@@ -8,7 +8,8 @@ namespace IntermediateProject.Lesson
         public Account(Person person)
         {
             _client = new Client();
-            CreateNewClient(person);
+            CreateNewClient(person); 
+          
         }
 
         //  public abstract void CreateNewClient(Person person); 
@@ -18,16 +19,18 @@ namespace IntermediateProject.Lesson
             var n = random.Next(1, 100);
             _client._code = n;
         }
+
     }
     internal class BankAccount : Account
     {   
         Stock _stock;
         Liquidity _liquidity;
         Crypto _cryptpo;
+        internal static int AccontNumbers; 
 
         public BankAccount(Person person) :base(person)
         {
-           
+            AccontNumbers++;
         }
         //public override void CreateNewClient(Person person)
         //{
@@ -42,7 +45,7 @@ namespace IntermediateProject.Lesson
         Crypto _cryptpo;
         public CryptoAccount(Person person) : base(person)
         {
-            CreateNewClient(person);
+           // CreateNewClient(person);
         }
         //public override void CreateNewClient(Person person)
         //{
@@ -56,7 +59,7 @@ namespace IntermediateProject.Lesson
         Stock _stock;
         public StockAccount(Person person) : base(person)
         {
-            CreateNewClient(person);
+          //  CreateNewClient(person);
         }
         //public override void CreateNewClient(Person person)
         //{
@@ -64,6 +67,5 @@ namespace IntermediateProject.Lesson
         //    var n = random.Next(1, 100);
         //    _client._code = n;
         //}
-    }
-    
+    }    
 }

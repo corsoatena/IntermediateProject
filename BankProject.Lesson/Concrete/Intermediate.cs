@@ -15,7 +15,12 @@ namespace IntermediateProject.Lesson
         }
         public void Withdraw()
         {
-            Console.WriteLine(" Sto prelevando dalla banca.");
+            Console.WriteLine(" Sto prelevando dalla banca."); 
+
+            // Crezione della transazione su File di testo dentor la folder Withdraw
+
+            // Crypto 
+            // FiAT  -> WithDraw ,  Deposit 
         }
     }
     internal class Borsa : Intermediate
