@@ -6,6 +6,8 @@ namespace IntermediateProject.Lesson
     {
         static void Main(string[] args)
         {
+            Person bruno = new Person();    
+            BankAccount bankAccount = new BankAccount(bruno);
            
         }   
     }  

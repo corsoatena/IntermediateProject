@@ -18,7 +18,7 @@ namespace IntermediateProject.Lesson
             Console.WriteLine(" Sto prelevando dalla banca.");
         }
     }
-    public class Borsa : Intermediate
+    internal class Borsa : Intermediate
     {
         public override void ManageMoney()
         {
